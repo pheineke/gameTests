@@ -32,10 +32,6 @@ def roughnoise(img: Image, img2=None):
 
             rpixel = ( (random.choice(pixels)[0] + random.randint(-5, 5) * random.choice([0,0,0,0,0,1,1,2,2])) )   % 255
             
-            ag = random.randint(0, 100)
-            ah = random.randint(0, 100)
-            ai = random.randint(0, 100)
-
             color = (rpixel, rpixel, rpixel)
             
 
