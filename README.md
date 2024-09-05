@@ -1,6 +1,6 @@
 ## perlingen-test05.py
 
-<img src="gifer/grid.gif" style="width: 100%; height: auto">
+<img src="gifer/grid.gif" style="width: 200%; height: auto">
 
 ##
 
