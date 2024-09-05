@@ -62,7 +62,7 @@ def draw_points():
         #img2.point(point_i, fill = 'black')
         #img2.point(point_i_2, fill = 'red')
         
-    img.save(IMG_NAME)
+    img.save(IMG_NAME, 'PNG')
     return img
 
 def fader(t):

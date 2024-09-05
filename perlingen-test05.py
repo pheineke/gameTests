@@ -32,15 +32,14 @@ def image_name():
     return name
 
 def grid_to_image():
-    img = Image.new('RGB', (GRID_SIZE, GRID_SIZE), color = (255, 255, 255, 0))
+    img = Image.new('RGBA', (GRID_SIZE, GRID_SIZE), color = (255, 255, 255, 0))
     img2 = ImageDraw.Draw(img)
     for i in range(GRID_SIZE):
         for j in range(GRID_SIZE):
             grid_value = GRID[i][j]
             if grid_value:
-                img2.point((i, j), fill = (grid_value, grid_value, grid_value))
-            else:
-                img2.point((i, j), fill = (0, 0, 0, 0))
+                img2.point((i, j), fill = (grid_value, grid_value, grid_value, 255))
+
     img.save(image_name())
 
 def main():
